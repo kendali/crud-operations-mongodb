@@ -1,40 +1,48 @@
-# CRUD Operations MongoDB
+# MongoDB Cheat Sheat
 
-1. **Create (Insert):**
-   To create or insert a document into a MongoDB collection, you use the `insertOne` or `insertMany` method.
+
+
+### CRUD Operations 
+
+
+1. **إنشاء (إدراج):**
+   لإنشاء أو إدراج مستند في مجموعة يُستخدم الأمر 
+   `insertOne` أو `insertMany`
 
    ```javascript
-   db.collectionName.insertOne({ field1: value1, field2: value2 });
+   db.collectionName.insertOne({ field1: قيمة1, field2: قيمة2 });
 
-   db.collectionName.insertMany([{ field1: value1 }, { field2: value2 }]);
+   db.collectionName.insertMany([{ field1: قيمة1 }, { field2: قيمة2 }]);
    ```
 
-2. **Read (Query):**
-   To read or query documents from a MongoDB collection, you use the `find` method.
+2. **قراءة (استعلام):**
+   لقراءة أو استعلام المستندات من مجموعة  يُستخدم الأمر 
+   `find`
 
    ```javascript
    db.collectionName.find();
 
-   db.collectionName.find({ field: value });
+   db.collectionName.find({ field: قيمة });
 
-   db.collectionName.findOne({ _id: ObjectId("documentId") });
+   db.collectionName.findOne({ _id: ObjectId("معرف_المستند") });
    ```
 
-3. **Update:**
-   To update documents in a MongoDB collection, you use the `updateOne` or `updateMany` method.
+3. **تحديث:**
+   لتحديث المستندات في مجموعة يُستخدم الأمر 
+   `updateOne` أو `updateMany`
 
    ```javascript
-   db.collectionName.updateOne({ filter }, { $set: { field: newValue } });
+   db.collectionName.updateOne({ مرشح }, { $set: { field: قيمة_جديدة } });
 
-   db.collectionName.updateMany({ filter }, { $set: { field: newValue } });
+   db.collectionName.updateMany({ مرشح }, { $set: { field: قيمة_جديدة } });
    ```
 
-4. **Delete:**
-   To delete documents from a MongoDB collection, you use the `deleteOne` or `deleteMany` method.
+4. **حذف:**
+   لحذف المستندات من مجموعة MongoDB، يُستخدم الأمر 
+   `deleteOne` أو `deleteMany`.
 
    ```javascript
-   db.collectionName.deleteOne({ filter });
+   db.collectionName.deleteOne({ مرشح });
 
-   db.collectionName.deleteMany({ filter });
+   db.collectionName.deleteMany({ مرشح });
    ```
-
