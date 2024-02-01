@@ -1,13 +1,38 @@
 # MongoDB Cheat Sheat
 
 
+### Basic Commands
 
+**عرض جميع قواعد البيانات**
+
+> `show dbs`
+
+**عرض قاعدة البيانات الحالية**
+> `db`
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+___
 ### CRUD Operations 
 
 
 1. **إنشاء (إدراج):**
    لإنشاء أو إدراج مستند في مجموعة يُستخدم الأمر 
-   `insertOne` أو `insertMany`
+   **`insertOne`** أو **`insertMany`**
 
    ```javascript
    db.collectionName.insertOne({ field1: قيمة1, field2: قيمة2 });
@@ -17,7 +42,7 @@
 
 2. **قراءة (استعلام):**
    لقراءة أو استعلام المستندات من مجموعة  يُستخدم الأمر 
-   `find`
+   **`find`**
 
    ```javascript
    db.collectionName.find();
@@ -29,7 +54,7 @@
 
 3. **تحديث:**
    لتحديث المستندات في مجموعة يُستخدم الأمر 
-   `updateOne` أو `updateMany`
+   **`updateOne`** أو **`updateMany`**
 
    ```javascript
    db.collectionName.updateOne({ filter }, { $set: { field: قيمة_جديدة } });
@@ -39,7 +64,7 @@
 
 4. **حذف:**
    لحذف المستندات من مجموعة MongoDB، يُستخدم الأمر 
-   `deleteOne` أو `deleteMany`.
+   **`deleteOne`** أو **`deleteMany`**
 
    ```javascript
    db.collectionName.deleteOne({ filter });
