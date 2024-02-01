@@ -32,9 +32,9 @@
    `updateOne` أو `updateMany`
 
    ```javascript
-   db.collectionName.updateOne({ مرشح }, { $set: { field: قيمة_جديدة } });
+   db.collectionName.updateOne({ filter }, { $set: { field: قيمة_جديدة } });
 
-   db.collectionName.updateMany({ مرشح }, { $set: { field: قيمة_جديدة } });
+   db.collectionName.updateMany({ filter }, { $set: { field: قيمة_جديدة } });
    ```
 
 4. **حذف:**
@@ -42,7 +42,16 @@
    `deleteOne` أو `deleteMany`.
 
    ```javascript
-   db.collectionName.deleteOne({ مرشح });
+   db.collectionName.deleteOne({ filter });
 
-   db.collectionName.deleteMany({ مرشح });
+   db.collectionName.deleteMany({ filter });
    ```
+
+
+
+
+
+
+
+
+
