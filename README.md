@@ -2,43 +2,42 @@
 
 ### Basic Commands
 
-* عرض جميع قواعد البيانات
+- عرض جميع قواعد البيانات
 
-> `show dbs`
+```javascript
+show dbs
+```
 
-* عرض قاعدة البيانات الحالية   
+- عرض قاعدة البيانات الحالية
 
-> `db`
-* إنشاء أو تبديل قاعدة البيانات
-> `use <DataBaseName>`
-* مسح قاعدة البيانات
-> `drop <DataBaseName>`
-* إنشاء مجموعة
-> `db.createCollection('collectionName')`
-* عرض المجموعات
-> `show collections`
-* 
+```javascript
+db
+```
 
+- إنشاء أو تبديل قاعدة البيانات
+```javascript
+use <DataBaseName>
+```
+- مسح قاعدة البيانات
+```javascript
+drop <DataBaseName>
+```
+- إنشاء مجموعة
+``` javascript
+db.createCollection('collectionName')
+```
+- عرض المجموعات
 
+```javascript
+show collections
+```
 
+---
 
-
-
-
-
-
-
-
-
-
-
-
-___
-### CRUD Operations 
-
+### CRUD Operations
 
 1. **إنشاء (إدراج):**
-   لإنشاء أو إدراج مستند في مجموعة يُستخدم الأمر 
+   لإنشاء أو إدراج مستند في مجموعة يُستخدم الأمر
    **`insertOne`** أو **`insertMany`**
 
    ```javascript
@@ -48,7 +47,7 @@ ___
    ```
 
 2. **قراءة (استعلام):**
-   لقراءة أو استعلام المستندات من مجموعة  يُستخدم الأمر 
+   لقراءة أو استعلام المستندات من مجموعة يُستخدم الأمر
    **`find`**
 
    ```javascript
@@ -60,7 +59,7 @@ ___
    ```
 
 3. **تحديث:**
-   لتحديث المستندات في مجموعة يُستخدم الأمر 
+   لتحديث المستندات في مجموعة يُستخدم الأمر
    **`updateOne`** أو **`updateMany`**
 
    ```javascript
@@ -70,7 +69,7 @@ ___
    ```
 
 4. **حذف:**
-   لحذف المستندات من مجموعة MongoDB، يُستخدم الأمر 
+   لحذف المستندات من مجموعة MongoDB، يُستخدم الأمر
    **`deleteOne`** أو **`deleteMany`**
 
    ```javascript
@@ -78,12 +77,3 @@ ___
 
    db.collectionName.deleteMany({ filter });
    ```
-
-
-
-
-
-
-
-
-
