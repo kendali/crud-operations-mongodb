@@ -1,17 +1,23 @@
 # MongoDB Cheat Sheat
 
-
 ### Basic Commands
 
-عرض جميع قواعد البيانات
+* عرض جميع قواعد البيانات
 
 > `show dbs`
 
-عرض قاعدة البيانات الحالية
+* عرض قاعدة البيانات الحالية   
 
 > `db`
-
-
+* إنشاء أو تبديل قاعدة البيانات
+> `use <DataBaseName>`
+* مسح قاعدة البيانات
+> `drop <DataBaseName>`
+* إنشاء مجموعة
+> `db.createCollection('collectionName')`
+* عرض المجموعات
+> `show collections`
+* 
 
 
 
